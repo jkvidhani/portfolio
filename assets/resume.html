@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jai Kumar Vidhani - Resume</title>
+<style>
+  :root{
+    --purple:#37474F;
+    --purple-dark:#2A363C;
+    --ink:#1a1a1a;
+    --gray:#6b7280;
+    --line:#e4e5e7;
+    --soft:#F4F5F6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{ height:100%; }
+  body{
+    font-family:'Segoe UI',Arial,Helvetica,sans-serif;
+    color:var(--ink);
+    background:#fff;
+    max-width:850px;
+    margin:0 auto;
+    padding:18px 40px 18px;
+  }
+  h1.name{
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:0.4px;
+  }
+  .role{
+    font-size:12px;
+    color:var(--gray);
+    margin-top:1px;
+    margin-bottom:4px;
+  }
+  .bio{
+    font-size:11px;
+    line-height:1.4;
+    color:#333;
+    max-width:760px;
+  }
+  .badge{
+    display:inline-block;
+    margin-top:7px;
+    background:var(--soft);
+    color:var(--purple-dark);
+    border:1px solid var(--line);
+    font-size:10px;
+    font-weight:600;
+    padding:3px 10px;
+    border-radius:20px;
+  }
+  .contact-bar{
+    margin-top:10px;
+    background:#fafafa;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:8px 2px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    align-items:center;
+  }
+  .contact-bar a, .contact-bar span{
+    color:#333;
+    font-size:10.5px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .contact-bar a:hover{ text-decoration:underline; }
+  .contact-bar svg{ width:12px; height:12px; fill:var(--purple); flex-shrink:0; }
+
+  .layout{
+    display:grid;
+    grid-template-columns:1.55fr 1fr;
+    gap:28px;
+    margin-top:10px;
+  }
+  section{ margin-bottom:8px; }
+  h2.sec-title{
+    font-size:11.5px;
+    font-weight:800;
+    letter-spacing:0.4px;
+    text-transform:uppercase;
+    padding-bottom:3px;
+    border-bottom:2px solid var(--purple);
+    margin-bottom:7px;
+  }
+
+  /* Left column entries */
+  .entry{ margin-bottom:5px; }
+  .entry:last-child{ margin-bottom:0; }
+  .entry-title{ font-size:10.5px; font-weight:700; }
+  .entry-sub{ font-size:10px; color:var(--purple-dark); font-weight:600; margin-top:0; }
+  .entry-meta{ font-size:9px; color:var(--gray); font-style:italic; margin-top:0; margin-bottom:2px; }
+  .entry ul{ margin-left:14px; margin-top:2px; }
+  .entry li{ font-size:9.5px; line-height:1.25; color:#333; margin-bottom:1px; }
+  .entry p.desc{ font-size:10px; line-height:1.3; color:#333; }
+  .tag-row{ margin-top:4px; display:flex; gap:6px; flex-wrap:wrap; }
+  .tag-outline{
+    font-size:9.5px;
+    font-weight:600;
+    color:#444;
+    border:1px solid #ccced2;
+    padding:2px 8px;
+    border-radius:14px;
+  }
+
+  /* Right column */
+  .pill-wrap{ display:flex; flex-wrap:wrap; gap:5px; }
+  .pill{
+    background:var(--soft);
+    color:#2b2b2b;
+    border:1px solid var(--line);
+    font-size:9.5px;
+    font-weight:600;
+    padding:4px 9px;
+    border-radius:14px;
+    white-space:nowrap;
+  }
+  .skill-group{ margin-bottom:7px; }
+  .skill-group:last-child{ margin-bottom:0; }
+  .skill-group-label{ font-size:9px; font-weight:700; color:var(--gray); text-transform:uppercase; margin-bottom:3px; letter-spacing:0.3px; }
+
+  .edu-entry{ margin-bottom:7px; }
+  .edu-entry:last-child{ margin-bottom:0; }
+  .edu-title{ font-size:10.5px; font-weight:700; }
+  .edu-sub{ font-size:9.5px; color:var(--purple-dark); font-weight:600; margin-top:0; }
+  .edu-meta{ font-size:9px; color:var(--gray); margin-top:0; }
+
+  .course-entry{ margin-bottom:6px; }
+  .course-entry:last-child{ margin-bottom:0; }
+  .course-title{ font-size:10.5px; font-weight:700; }
+  .course-sub{ font-size:9.5px; color:var(--gray); margin-top:0; }
+
+  .lang-row{ display:flex; justify-content:space-between; align-items:center; margin-bottom:5px; font-size:10.5px; max-width:160px; }
+  .dots{ display:flex; gap:3px; }
+  .dot{ width:7px; height:7px; border-radius:50%; background:var(--line); }
+  .dot.filled{ background:var(--purple); }
+
+  @page{ size:A4; margin:0; }
+  @media print{
+    html,body{ width:210mm; height:297mm; }
+    body{ padding:10mm 14mm; }
+    a{ color:inherit; }
+    .layout{ page-break-inside:avoid; }
+    section{ page-break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+
+  <h1 class="name">JAI KUMAR VIDHANI</h1>
+  <div class="role">Aspiring AI/ML Engineer</div>
+  <div class="skill-group-label" style="margin-top:2px;">Professional Summary</div>
+  <p class="bio">I am a 2nd-year B.Tech AIML student building a strong foundation in programming and data-driven problem solving. I am actively developing my skills in Python and SQL, and taking on practical challenges to accelerate my growth in AI/ML.</p>
+  <span class="badge">Open to learning opportunities</span>
+
+  <div class="contact-bar">
+    <a href="tel:+918290728172">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+      +91 82907 28172
+    </a>
+    <a href="mailto:jaividhani987@gmail.com">
+      <svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 13l8-6.99V6H4zm16 12V8.24l-8 7-8-7V18h16z"/></svg>
+      jaividhani987@gmail.com
+    </a>
+    <span>
+      <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+      Mathura, Uttar Pradesh, India
+    </span>
+    <a href="https://github.com/jkvidhani" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.29 9.29 0 015 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+      github.com/jkvidhani
+    </a>
+    <a href="https://www.linkedin.com/in/jai-kumar-vidhani" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      linkedin.com/in/jai-kumar-vidhani
+    </a>
+  </div>
+
+  <div class="layout">
+    <!-- LEFT COLUMN -->
+    <div>
+      <section>
+        <h2 class="sec-title">Education</h2>
+        <div class="edu-entry">
+          <div class="edu-title">B.Tech in Artificial Intelligence &amp; Machine Learning</div>
+          <div class="edu-sub">GLA University</div>
+          <div class="edu-meta">2025 &ndash; Present</div>
+          <div class="edu-meta">First-Year CPI: 8.42</div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-title">Higher Secondary (12th, PCM)</div>
+          <div class="edu-sub">Maheshwari International School (CBSE)</div>
+          <div class="edu-meta">Graduated 2025 &middot; 83.6%</div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-title">Secondary School (10th)</div>
+          <div class="edu-sub">Maheshwari International School (CBSE)</div>
+          <div class="edu-meta">Graduated 2023 &middot; 78.2%</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title">Training &amp; Experience</h2>
+        <div class="entry">
+          <div class="entry-title">Microsoft Azure AZ-900 Training</div>
+          <div class="entry-sub">Microsoft Azure Fundamentals / AZ-900</div>
+          <div class="entry-meta">Duration: 26 February &ndash; 22 May</div>
+          <p class="desc">Cloud-focused professional certified, with a strong understanding of cloud architecture, core services, security governance, and cost optimization.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Bootcamp &amp; Skill Credit Assessment</div>
+          <div class="entry-sub">Focus: Skill Credit Assessment</div>
+          <div class="entry-meta">Duration: June &ndash; July 2026</div>
+          <p class="desc">Accelerated my engineering foundation through an intensive summer bootcamp focused on core Machine Learning architectures and modern backend integration. Engineered a data-driven Sales Dashboard by managing databases and executing end-to-end API testing workflows.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title">Certifications</h2>
+        <div class="entry">
+          <div class="entry-title">Oracle Agentic AI Certified Foundations Associate <span style="font-weight:400;color:var(--gray);font-size:9px;">&middot; Aug 2026 &ndash; Aug 2028</span></div>
+          <ul>
+            <li>Learned the fundamentals of agentic AI &ndash; how autonomous AI agents plan, reason, and take action.</li>
+            <li>Built understanding of Oracle's AI/GenAI service ecosystem and how agentic workflows are designed.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Microsoft Azure Fundamentals (AZ-900) <span style="font-weight:400;color:var(--gray);font-size:9px;">&middot; May 2026</span></div>
+          <ul>
+            <li>Completed a 2-month structured training program on Azure fundamentals through GLA University.</li>
+            <li>Learned core cloud concepts (IaaS/PaaS/SaaS), Azure services, pricing, and security fundamentals.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Build a Computer Vision App with Azure Cognitive Services <span style="font-weight:400;color:var(--gray);font-size:9px;">&middot; Aug 2026</span></div>
+          <ul>
+            <li>Used the Azure Cognitive Services Computer Vision API to analyze and extract insights from images.</li>
+            <li>Learned to integrate cloud-based AI APIs into an application and handle image-processing workflows.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-title">AI for All &ndash; TCS iON <span style="font-weight:400;color:var(--gray);font-size:9px;">&middot; Apr 2026</span></div>
+          <ul>
+            <li>Learned foundational AI concepts, ethics, and how AI is applied across real-world industries.</li>
+            <li>Understood the societal impact and responsible use of AI in everyday applications.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <section>
+        <h2 class="sec-title">Projects</h2>
+        <div class="entry">
+          <div class="entry-title">NoteGenius AI</div>
+          <p class="desc">Developed an intelligent study assistant to enhance learning efficiency and knowledge retention. The application automatically generates interactive flashcards, produces concise summaries of study notes, and builds custom quizzes to test comprehension.</p>
+          <div class="tag-row">
+            <span class="tag-outline">Python</span>
+            <span class="tag-outline">AI/ML Integrations</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title">Skills</h2>
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="pill-wrap">
+            <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C</span>
+            <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Frameworks &amp; Libraries</div>
+          <div class="pill-wrap">
+            <span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Scikit-learn</span>
+            <span class="pill">Matplotlib</span><span class="pill">Seaborn</span><span class="pill">Streamlit</span>
+            <span class="pill">ReactJS</span><span class="pill">Tailwind CSS</span><span class="pill">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Databases</div>
+          <div class="pill-wrap">
+            <span class="pill">MongoDB</span><span class="pill">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Personal Skills</div>
+          <div class="pill-wrap">
+            <span class="pill">Effective Communication</span><span class="pill">Quick Learner</span>
+            <span class="pill">Leadership</span><span class="pill">Problem Solving</span>
+          </div>
+        </div>
+      </section>  
+
+      <section>
+        <h2 class="sec-title">Languages</h2>
+        <div class="lang-row">
+          <span>English</span>
+          <div class="dots">
+            <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div class="lang-row">
+          <span>Hindi</span>
+          <div class="dots">
+            <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
